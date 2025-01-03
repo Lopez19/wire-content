@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Saber extends Model
 {
-
     use HasFactory;
 
     protected $table = 'saberes';
@@ -21,7 +20,7 @@ class Saber extends Model
         'format_id',
         'palabras_clave',
         'autor',
-        'enlace_adicional'
+        'enlace_adicional',
     ];
 
     protected $casts = [

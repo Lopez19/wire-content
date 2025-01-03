@@ -13,6 +13,7 @@ class InstallCommand extends Command
     public function handle(): int
     {
         $this->comment('All done');
+
         return self::SUCCESS;
     }
 }

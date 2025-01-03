@@ -6,6 +6,6 @@ class WireContent
 {
     protected static function getFacadeAccessor(): string
     {
-        return "wire-content";
+        return 'wire-content';
     }
 }
