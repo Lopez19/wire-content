@@ -1,22 +1,24 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "lopez19/wire-content",
+    "description": "An awesome content management system",
+    "version": "0.0.1",
     "keywords": [
-        ":vendor_name",
+        "wire-content",
         "laravel",
-        ":package_slug"
+        "cms",
+        "filamentphp"
     ],
     "homepage": "https://github.com/:vendor_slug/:package_slug",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Horacio Lopez",
+            "email": "lopez0x13@icloud.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.2",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0"
     },
@@ -35,14 +37,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "WireContent\\": "src/"
         }
     },
     "scripts": {
@@ -63,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "WireContent\\WireContentServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "WireContent": "WireContent\\Facades\\WireContent"
             }
         }
     },
